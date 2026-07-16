@@ -140,34 +140,150 @@ footer h3{
 footer p{
     font-size:20px;
 }
-@media(max-width:768px){
+@media screen and (max-width:768px){
+
+
 .logo-section{
     flex-direction:column;
+    text-align:center;
+    gap:10px;
 }
+
+.logo-section img{
+    margin-top:0;
+    width:70px;
+    height:70px;
+}
+
 .title h1{
-    font-size:22px;
+    font-size:20px;
 }
+
 .title h2{
-    font-size:18px;
+    font-size:16px;
 }
+
+/* Navigation */
 nav ul{
     flex-direction:column;
-    text-align:center;
+    align-items:center;
 }
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero{
+    padding:15px;
+}
+
 .hero video{
-    width:95%;
+    width:100%;
+    height:auto;
 }
+
 .hero-content{
-    width:95%;
+    width:100%;
 }
+
 .hero-content p{
-    font-size:18px;
+    font-size:16px;
 }
 .highlights{
     flex-direction:column;
     align-items:center;
+    padding:20px;
 }
+
 .card{
-    width:90%;
+    width:95%;
+    margin-bottom:20px;
+}
+table{
+    width:100% !important;
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+form{
+    width:100%;
+}
+
+article{
+    width:95% !important;
+    height:auto !important;
+    margin:20px auto !important;
+    padding:20px !important;
+}
+
+fieldset{
+    width:100%;
+}
+
+label{
+    display:block !important;
+    width:100% !important;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100% !important;
+    margin-bottom:15px;
+    padding:10px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto !important;
+    margin-right:5px;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    font-size:16px;
+}
+
+/* Login Link Button */
+a[style]{
+    width:100% !important;
+    display:block !important;
+}
+
+iframe{
+    width:100% !important;
+    height:300px !important;
+}
+
+div[style*="display:flex"]{
+    flex-direction:column !important;
+    align-items:center;
+    gap:20px;
+}
+
+div[style*="display:flex"] > div{
+    width:90% !important;
+}
+
+footer h3{
+    margin-top:20px;
+    font-size:18px;
+}
+
+footer p{
+    font-size:16px;
+}
 }
 }
